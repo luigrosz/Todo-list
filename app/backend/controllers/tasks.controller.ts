@@ -19,4 +19,14 @@ export default class TasksController {
       next(err);
     }
   }
+
+  public static async deleteTask(req: Request, res: Response, next: NextFunction) {
+    try {
+      const { id } = req.params;
+      const deletedTask = await TasksService.deleteTask(id);
+      res.status(200).json(deletedTask);
+    } catch (err) {
+      next(err);
+    }
+  }
 }

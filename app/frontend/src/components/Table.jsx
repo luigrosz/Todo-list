@@ -6,14 +6,13 @@ export default function List(props) {
     let arr = Object.entries(props);
     arr.map((e) => e.shift())
     let result = arr.map((e) => {
-      console.log(e[0].name);
       
       return (
-      <tr>
+      <tr id={e[0].id} key={e[0].id}>
         <td>{e[0].name}</td>
         <td>{e[0].task}</td>
         <td>{e[0].stat}</td>
-        <td><input type="checkbox"/></td>
+        <td><input type="radio" name="select"/></td>
       </tr>
       )
     })

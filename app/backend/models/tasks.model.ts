@@ -12,4 +12,10 @@ export default class TasksModel {
     const [result] = await connection.query(query, [name, task]);
     return result;
   }
+
+  public static async delete(id: String) {
+    const query = 'DELETE FROM tasks WHERE id = ?';
+    const [result] = await connection.query(query, [id]);
+    return result;
+  }
 }

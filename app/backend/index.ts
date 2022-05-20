@@ -16,6 +16,7 @@ app.use(bodyParser.json());
 
 app.get("/", tasksController.getAll);
 app.post("/add", tasksController.addTask);
+app.delete("/:id", tasksController.deleteTask);
 
 app.use(error);
 

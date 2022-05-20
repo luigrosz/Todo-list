@@ -10,4 +10,9 @@ export default class TasksService {
     const newTask = await TasksModel.create(name, task);
     return newTask;
   }
+
+  public static async deleteTask(id: String) {
+    const deletedTask = await TasksModel.delete(id);
+    return deletedTask;
+  }
 }
