@@ -5,7 +5,6 @@ import Todo from './pages/List';
 import Create from './pages/Create'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
-import 'dotenv/config'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
