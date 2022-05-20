@@ -1,6 +1,6 @@
 import Buttons from '../components/AllButtons'
 import Header from '../components/Header'
-import TodoList from '../components/List'
+import Table from '../components/Table'
 import { useState, useEffect } from 'react'
 import '../App.css'
 import Loading from '../components/Loading'
@@ -19,12 +19,16 @@ export default function List() {
     fetchAllTasks();
   }, []);
 
+  useEffect(() => {
+
+  });
+
   return (
     isLoading ? <Loading/> :
     <div className='home'>
       <Header />
       <Buttons />
-      <TodoList {...tasks}/>
+      <Table {...tasks}/>
     </div>
   )
 }

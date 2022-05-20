@@ -33,10 +33,10 @@ header {
   font-size: 1.2em;
 }
 
-.list {
+/* .list {
   display: flex;
   justify-content: space-around;
-  /* background-color: white; */
+  background-color: white;
   margin-top: 5em;
   margin-left: 10%;
   margin-right: 10%;
@@ -44,7 +44,7 @@ header {
 
 .list-title {
   font-size: 2.2em;
-}
+} */
 
 .title-add-item {
   margin-top: 5.2em;
