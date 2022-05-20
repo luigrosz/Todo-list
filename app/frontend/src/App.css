@@ -33,19 +33,6 @@ header {
   font-size: 1.2em;
 }
 
-/* .list {
-  display: flex;
-  justify-content: space-around;
-  background-color: white;
-  margin-top: 5em;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.list-title {
-  font-size: 2.2em;
-} */
-
 .title-add-item {
   margin-top: 5.2em;
   display: flex;
@@ -77,3 +64,42 @@ header {
   margin-bottom: 1em;
   font-size: 1.2em;
 }
+
+/* table */
+
+.table th h1 {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #8A2BE2;
+}
+
+.table {
+  text-align: center;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5em;
+  display: table;
+}
+
+.table td, .table th {
+  padding-bottom: 0.8em;
+  padding-top: 0.8em;
+  padding-left: 0.8em;  
+}
+
+/* Background-color of the odd rows */
+.table tr:nth-child(odd) {
+  background-color: #CCCCCC;
+}
+
+/* Background-color of the even rows */
+.table tr:nth-child(even) {
+  background-color: #FFFFFF;
+}
+
+.table th {
+  background-color: #0A0C0D;
+}
+
+.table td:first-child { color: #05160c; }

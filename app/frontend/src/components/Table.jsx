@@ -1,21 +1,18 @@
-interface ITableProps {
-  name: string,
-  task: string,
-  stat: string,
-}
 
-export default function List(props: ITableProps[]) {
-  let arr = Object.entries(props);
-  arr.map((e) => e.shift())
-  console.log(arr)
 
+export default function List(props) {
+  
   function renderTasks() {
+    let arr = Object.entries(props);
+    arr.map((e) => e.shift())
     let result = arr.map((e) => {
+      console.log(e[0].name);
+      
       return (
       <tr>
-        <td>hello</td>
-        <td>by</td>
-        <td>me!</td>
+        <td>{e[0].name}</td>
+        <td>{e[0].task}</td>
+        <td>{e[0].stat}</td>
         <td><input type="checkbox"/></td>
       </tr>
       )
