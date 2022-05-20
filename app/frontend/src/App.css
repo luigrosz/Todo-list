@@ -103,3 +103,40 @@ header {
 }
 
 .table td:first-child { color: #05160c; }
+
+.table-edit {
+  margin-top: 254px;
+}
+
+.title-edit {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.4em;
+}
+
+.edit-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 14em;
+  margin-bottom: 2em;
+}
+
+.confirm-button {
+  margin-right: 1em;
+}
+
+.back-button {
+  margin-left: 1em;
+}
+
+.text-edit-div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4em;
+}
+
+.dropdown-edit {
+  height: 4em;
+  text-align: center;
+  width: 11em;
+}
