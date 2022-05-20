@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Create() {
   const [name, setName] = useState("");
-  const [task, settask] = useState("");
+  const [task, setTask] = useState("");
   const navigate = useNavigate();
 
   let OnSubmitClick = async () => {
@@ -28,7 +28,7 @@ export default function Create() {
       <div className='form-div'>
         <form className='form-create'>
           <input value={name} onChange={(e) => setName(e.target.value)} className="input-name" maxLength={40} type="text" placeholder="Name" />
-          <input value={task} onChange={(e) => settask(e.target.value)} className="input-task" maxLength={40} type="text" placeholder="Task" />
+          <input value={task} onChange={(e) => setTask(e.target.value)} className="input-task" maxLength={40} type="text" placeholder="Task" />
           <button className="form-button" onClick={(e) => {
             e.preventDefault();
             OnSubmitClick();

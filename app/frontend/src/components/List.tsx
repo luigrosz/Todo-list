@@ -4,7 +4,9 @@ interface ITableProps {
   stat: string;
 }
 
-export default function List(props: ITableProps) {
+export default function List(props: ITableProps[]) {
+  console.log(props);
+  
   return (
     <div className="list">
      <div className="list-title"> Name </div>
